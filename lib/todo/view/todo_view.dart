@@ -21,8 +21,10 @@ class TodoView extends StatelessWidget {
               final messenger = ScaffoldMessenger.of(context);
               messenger.showSnackBar(
                 SnackBar(
-                  content: Text(
-                    'Todo added: ${todoViewModel.todoObservableList.last.title}',
+                  content: Container(
+                    child: Text(
+                      'Todo added: ${todoViewModel.todoObservableList.last.title}',
+                    ),
                   ),
                 ),
               );
